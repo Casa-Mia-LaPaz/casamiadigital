@@ -1,37 +1,84 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Mía Digital</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
 <div class="contenedor">
 
-  <img src="imagenes/logo.png" class="logo" alt="Casa Mía">
+    <header>
 
-    <h1>Casa Mía</h1>
-    
-    <p class="subtitulo">Seleccione una categoría</p>
+        <img src="imagenes/Logo.png" class="logo" alt="Casa Mía">
 
-    <div class="menu">
+        <h1>CASA MÍA</h1>
 
-        <button class="boton-menu">🍕 PIZZAS</button>
+        <p>La mesa está servida, siéntete en casa.</p>
 
-        <button class="boton-menu">🍝 PASTAS</button>
+    </header>
 
-        <button class="boton-menu">🥘 LASAÑA</button>
+    <section class="menu">
 
-        <button class="boton-menu">🥤 BEBIDAS</button>
+        <div class="tarjeta" id="pizzas">
 
-        <button class="boton-menu">⭐ PROMOCIONES</button>
+            <img src="imagenes/pizzas/portada.jpg">
 
-    </div>
+            <div class="titulo">
+                🍕 PIZZAS
+            </div>
+
+        </div>
+
+        <div class="tarjeta" id="pastas">
+
+            <img src="imagenes/pastas/portada.jpg">
+
+            <div class="titulo">
+                🍝 PASTAS
+            </div>
+
+        </div>
+
+        <div class="tarjeta" id="lasagna">
+
+            <img src="imagenes/lasagna/portada.jpg">
+
+            <div class="titulo">
+                🥘 LASAÑA
+            </div>
+
+        </div>
+
+        <div class="tarjeta" id="bebidas">
+
+            <img src="imagenes/bebidas/portada.jpg">
+
+            <div class="titulo">
+                🥤 BEBIDAS
+            </div>
+
+        </div>
+
+        <div class="tarjeta" id="promociones">
+
+            <img src="imagenes/promociones/portada.jpg">
+
+            <div class="titulo">
+                ⭐ PROMOCIONES
+            </div>
+
+        </div>
+
+    </section>
+
 </div>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
-</html>
