@@ -1,19 +1,31 @@
-document.getElementById("pizzas").addEventListener("click", function () {
-    window.location.href = "paginas/pizzas.html";
-});
+// Página principal
+const tarjetaPizzas = document.getElementById("pizzas");
 
-document.getElementById("pastas").addEventListener("click", function () {
-    alert("Entrando al menú de Pastas");
-});
+if (tarjetaPizzas) {
+    tarjetaPizzas.addEventListener("click", function () {
+        window.location.href = "paginas/pizzas.html";
+    });
+}
 
-document.getElementById("lasagna").addEventListener("click", function () {
-    alert("Entrando al menú de Lasaña");
-});
+// Página de pizzas
+const lista = document.getElementById("listaPizzas");
 
-document.getElementById("bebidas").addEventListener("click", function () {
-    alert("Entrando al menú de Bebidas");
-});
+if (lista && typeof pizzas !== "undefined") {
 
-document.getElementById("promociones").addEventListener("click", function () {
-    alert("Entrando al menú de Promociones");
-});
+    pizzas.forEach(function (pizza) {
+
+        lista.innerHTML += `
+            <div class="tarjeta">
+
+                <img src="${pizza.imagen}" alt="${pizza.nombre}">
+
+                <div class="titulo">
+                    ${pizza.nombre}
+                </div>
+
+            </div>
+        `;
+
+    });
+
+}

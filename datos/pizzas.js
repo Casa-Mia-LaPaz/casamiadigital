@@ -62,21 +62,11 @@ const pizzas = [
     {
         nombre: "Cuatro Quesos",
         descripcion: "Mezcla especial de cuatro quesos.",
-        imagen: "../imagenes/pizzas/cuatroquesos.jpg",
+        imagen: "../imagenes/pizzas/4quesos.jpg",
         precios: {
             cuatro: 47,
             seis: 69,
             ocho: 91
         }
     },
-    {
-        nombre: "Brisa Toscana",
-        descripcion: "Especialidad de Casa Mía.",
-        imagen: "../imagenes/pizzas/brisatoscana.jpg",
-        precios: {
-            cuatro: 47,
-            seis: 69,
-            ocho: 91
-        }
-    }
 ];
