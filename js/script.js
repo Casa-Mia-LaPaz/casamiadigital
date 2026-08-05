@@ -49,7 +49,7 @@ if (lista && typeof pizzas !== "undefined") {
     pizzas.forEach(function (pizza) {
 
         lista.innerHTML += `
-            <div class="tarjeta">
+            <div class="tarjeta" onclick="window.location.href='pizza.html?id=${pizza.id}'">
                 <img src="${pizza.imagen}" alt="${pizza.nombre}">
                 <div class="titulo">${pizza.nombre}</div>
             </div>
